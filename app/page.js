@@ -406,31 +406,31 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center p-[16px] font-bold gap-5 mt-6 mb-10">
             <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
-                <Image alt="" height={25} src={icon_frontend} />
+                <Image alt="FRONTEND" height={25} src={icon_frontend} />
               </div>
               <p>Full stack developement</p>
             </div>
             <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
-                <Image alt="" height={25} src={icon_seo} />
+                <Image alt="SEO" height={25} src={icon_seo} />
               </div>
               <p>Search Engine Optimizations</p>
             </div>
             <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
-                <Image alt="" height={25} src={icon_ui} />
+                <Image alt="UI" height={25} src={icon_ui} />
               </div>
               <p>UI/UX prototyping</p>
             </div>
             <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
-                <Image alt="" height={25} src={icon_ui} />
+                <Image alt="UI" height={25} src={icon_ui} />
               </div>
               <p>Seamless User Interface</p>
             </div>
             <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
-                <Image alt="" height={25} src={icon_cross} />
+                <Image alt="CROSS PLATFORM" height={25} src={icon_cross} />
               </div>
               <p>Cross platform compatibility</p>
             </div>
