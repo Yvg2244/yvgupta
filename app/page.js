@@ -416,7 +416,7 @@ export default function Home() {
                         size="md"
                         className="justify-center items-center py-[10px] px-[20px] border-white border-[1px] bg-pink-500 rounded-md text-white"
                       >
-                        <Link href="https://github.com/Yvg2244/redowl">
+                        <Link href="https://github.com/Yvg2244/practical_schedular">
                           Code Link
                         </Link>{" "}
                       </Button>
@@ -426,7 +426,7 @@ export default function Home() {
                         className="justify-center items-center py-[10px] px-[20px] border-pink-500 border-[1px] bg-white text-pink-500 rounded-md"
                         variant="text"
                       >
-                        <Link href="https://redowlschools.vercel.app/">
+                        <Link href="https://practical-schedular.vercel.app/">
                           Deployed Link
                         </Link>
                       </Button>
