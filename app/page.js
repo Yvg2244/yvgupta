@@ -265,7 +265,7 @@ export default function Home() {
                   className="h-full w-full object-cover"
                 />
                 <div className="inset-0 grid h-full w-full place-items-center bg-[#1E1A25]">
-                  <div className="w-3/4 text-center md:w-2/4">
+                  <div className="w-fit lg:w-3/4 text-center md:w-2/4">
                     <div className="flex gap-2 text-[12px] my-4">
                       <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
                         React
@@ -323,10 +323,10 @@ export default function Home() {
                   className="h-full w-full object-cover"
                 />
                 <div className="inset-0 grid h-full w-full place-items-center bg-[#1E1A25]">
-                  <div className="w-3/4 text-center md:w-2/4">
+                  <div className="w-fit lg:w-3/4 text-center md:w-2/4">
                     <div className="flex gap-2 text-[12px] my-4">
                       <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
-                        Next JS
+                        Next
                       </div>
                       <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
                         Tailwind
@@ -381,7 +381,7 @@ export default function Home() {
                   className="h-full w-full object-cover"
                 />
                 <div className="inset-0 grid h-full w-full place-items-center bg-[#1E1A25]">
-                  <div className="w-3/4 text-center md:w-2/4">
+                  <div className="w-fit lg:w-3/4 text-center md:w-2/4">
                     <div className="flex gap-2 text-[12px] my-4">
                       <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
                         Next
