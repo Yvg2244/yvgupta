@@ -200,7 +200,7 @@ export default function Home() {
               }}
               className=" px-2 bg-clip-text text-transparent text-center italic bg-gradient-to-r from-[#F83A3A] from-0% via-[#F13CC7] via-50% to-[#7000FF] to-100%"
             >
-              Bringing UI's to Life
+              Bringing UI&apos;s to Life
             </motion.div>{" "}
             <motion.div
               className="bg-white h-1 rounded-lg w-full "
