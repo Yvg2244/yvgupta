@@ -22,6 +22,7 @@ import { useFormik } from "formik";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 import project1 from "../assests/project-devsclash.png";
+import project3 from "../assests/project-schedular.png";
 import dp from "../assests/dp.svg";
 import project2 from "../assests/project-redowl.png";
 import icon_frontend from "../assests/icons8-frontend.png";
@@ -50,10 +51,10 @@ export default function Home() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_053iy3d",
-        "template_kweexvx",
+        "service_lxgm61x",
+        "template_impl6yk",
         form.current,
-        "00o5Rc2ipt69UwAvh"
+        "fwGClaUIYwSddEuv1"
       )
       .then(
         (result) => {
@@ -81,10 +82,13 @@ export default function Home() {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-1 tracking-wider font-normal"
       >
-        <a href="#contact" className="flex items-center">
-          Contact Us
+        <a
+          href="https://drive.google.com/file/d/1oG4tsKKfjVXq6UbutFFreegMOSM12iGT/view?usp=drive_link"
+          className="flex font-semibold items-center"
+        >
+          My Resume
         </a>
       </Typography>
       <Typography
@@ -93,8 +97,11 @@ export default function Home() {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#work" className="flex items-center">
-          Our Work
+        <a
+          href="https://github.com/Yvg2244"
+          className="flex font-semibold tracking-wider items-center"
+        >
+          Github
         </a>
       </Typography>
       <Typography
@@ -103,8 +110,11 @@ export default function Home() {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#FAQ" className="flex items-center">
-          FAQs
+        <a
+          href="https://www.linkedin.com/in/yashverdhangupta/"
+          className="flex font-semibold tracking-wider items-center"
+        >
+          LinkedIn
         </a>
       </Typography>
     </ul>
@@ -232,7 +242,7 @@ export default function Home() {
             sx={{ color: "white" }}
             className="rounded-lg z-[20] tracking-wider font-bold bg-gradient-to-r from-[#F83A3A] from-0% via-[#F13CC7] via-50% to-[#7000FF] to-100% py-[12px] px-[40px]"
           >
-            <Link href="#contact">Lets Work Togehter!</Link>{" "}
+            <Link href="#contact">Let&apos;s Work Togehter!</Link>{" "}
           </Button>
         </section>
         <article
@@ -256,27 +266,27 @@ export default function Home() {
                 />
                 <div className="inset-0 grid h-full w-full place-items-center bg-[#1E1A25]">
                   <div className="w-3/4 text-center md:w-2/4">
-                    <Typography
-                      variant="h1"
-                      color="white"
-                      className="mb-4 mt-4 text-xl md:text-4xl lg:text-5xl"
-                    >
-                      DevsClash
-                    </Typography>
-                    <div className="flex gap-2">
-                      <div className="py-2 px-5 bg-[#EE4578] rounded-[1rem] ">
+                    <div className="flex gap-2 text-[12px] my-4">
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
                         React
                       </div>
-                      <div className="py-2 px-5 bg-[#EE4578] rounded-[1rem] ">
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
                         Tailwind
                       </div>
-                      <div className="py-2 px-5 bg-[#EE4578] rounded-[1rem] ">
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
                         MongoDB
                       </div>
-                      <div className="py-2 px-5 bg-[#EE4578] rounded-[1rem] ">
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
                         Node
                       </div>
                     </div>
+                    <Typography
+                      variant="h1"
+                      color="white"
+                      className="mb-4 mt-4 text-xl md:text-4xl tracking-wide lg:text-5xl"
+                    >
+                      DevsClash
+                    </Typography>
                     <Typography
                       variant="lead"
                       color="white"
@@ -314,10 +324,21 @@ export default function Home() {
                 />
                 <div className="inset-0 grid h-full w-full place-items-center bg-[#1E1A25]">
                   <div className="w-3/4 text-center md:w-2/4">
+                    <div className="flex gap-2 text-[12px] my-4">
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
+                        Next JS
+                      </div>
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
+                        Tailwind
+                      </div>
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
+                        Javascript
+                      </div>
+                    </div>
                     <Typography
                       variant="h1"
                       color="white"
-                      className="mb-4 mt-4 text-xl md:text-4xl lg:text-5xl"
+                      className="mb-4 tracking-wide mt-4 text-xl md:text-4xl lg:text-5xl"
                     >
                       RedOwl Schools
                     </Typography>
@@ -353,56 +374,74 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              <div className="px-4 lg:flex lg:flex-row justify-center items-center lg:h-auto h-full w-full">
+                <Image
+                  src={project3}
+                  alt="project schedular"
+                  className="h-full w-full object-cover"
+                />
+                <div className="inset-0 grid h-full w-full place-items-center bg-[#1E1A25]">
+                  <div className="w-3/4 text-center md:w-2/4">
+                    <div className="flex gap-2 text-[12px] my-4">
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
+                        Next
+                      </div>
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
+                        Tailwind
+                      </div>
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
+                        MongoDB
+                      </div>
+                      <div className="py-1 px-4 bg-[#84354f] border-[#EE4578] border-2 rounded-[1rem] ">
+                        Node
+                      </div>
+                    </div>
+                    <Typography
+                      variant="h1"
+                      color="white"
+                      className="mb-4 tracking-wide mt-4 text-xl md:text-4xl lg:text-5xl"
+                    >
+                      Practical Schedular
+                    </Typography>
+                    <Typography
+                      variant="lead"
+                      color="white"
+                      className="mb-12 text-md opacity-80"
+                    >
+                      Schedular that takes in excel sheet of students and
+                      creates a custom schedule.
+                    </Typography>
+                    <div className="flex justify-center gap-2">
+                      <Button
+                        size="md"
+                        className="justify-center items-center py-[10px] px-[20px] border-white border-[1px] bg-pink-500 rounded-md text-white"
+                      >
+                        <Link href="https://github.com/Yvg2244/redowl">
+                          Code Link
+                        </Link>{" "}
+                      </Button>
+
+                      <Button
+                        size="md"
+                        className="justify-center items-center py-[10px] px-[20px] border-pink-500 border-[1px] bg-white text-pink-500 rounded-md"
+                        variant="text"
+                      >
+                        <Link href="https://redowlschools.vercel.app/">
+                          Deployed Link
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Carousel>
             <div className="w-[100vw] h-[3rem] bg-[#06020f] absolute bottom-[-1rem] rounded-tl-[45%] rounded-tr-[45%]"></div>
           </div>
-          {/* <Box className="flex mt-[6rem] ">
-          <Container className="relative flex flex-col items-center py-[3rem] h-auto w-[100vw] bg-[#1E1A25] ">
-            <Container className="w-[100vw] h-[3rem] bg-primary absolute top-[-1rem] rounded-bl-[45%] rounded-br-[45%]"></Container>
-            <Image
-              alt=""
-              src={project1}
-              height={200}
-              className="mt-[3rem] mb-[2rem]"
-            />
-            <Container className="flex flex-col w-full items-start gap-6">
-              <Container className="flex text-[10px] gap-4">
-                <div className="justify-center items-center py-[12px] px-[20px] border-[#EE4578] border-[1px] bg-[#852F4E] rounded-[1.5rem]">
-                  React
-                </div>
-                <div className="justify-center items-center py-[12px] px-[20px] border-[#EE4578] border-[1px] bg-[#852F4E] rounded-[1.5rem]">
-                  Python
-                </div>
-                <div className="justify-center items-center py-[12px] px-[20px] border-[#EE4578] border-[1px] bg-[#852F4E] rounded-[1.5rem]">
-                  Tailwind
-                </div>
-              </Container>
-              <h3 className="text-2xl font-bold">DevsClash</h3>
-              <p className="w-full text-start leading-7">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum aliquid unde dolorum assumenda. Unde libero atque
-                similique adipisci recusandae distinctio et blanditiis nostrum
-                cum eveniet provident fugiat iusto, incidunt fuga!
-              </p>
-              <Container className="flex text-[12px] font-semibold gap-4">
-                <div className="justify-center items-center py-[10px] px-[20px] border-white border-[1px] bg-pink-500 rounded-md">
-                  Code Link
-                </div>
-                <div className="justify-center items-center py-[10px] px-[20px] border-pink-500 border-[1px] bg-white text-pink-500 rounded-md">
-                  Deploy Link
-                </div>
-              </Container>
-            </Container>
-            <Container className="w-[100vw] h-[3rem] bg-primary absolute bottom-[-1rem] rounded-tl-[45%] rounded-tr-[45%]"></Container>
-          </Container>
-        </Box> */}
         </article>
         <section className="flex items-center flex-col">
-          <h4>What we can do?</h4>
+          <h4>What I bring to the table?</h4>
           <h2 className="flex flex-col  text-[30px]  font-bold  ">Services</h2>
-          <p className="px-[10px] text-center opacity-70 mt-[1rem]">
-            Building Digital Dreams: Our Web Services Bring Your Vision to Life{" "}
-          </p>
+
           <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center p-[16px] font-bold gap-5 mt-6 mb-10">
             <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
@@ -441,18 +480,6 @@ export default function Home() {
             Frequently Asked Questions
           </h2>
 
-          <Accordion open={open === 1} animate={customAnimation}>
-            <AccordionHeader
-              className="text-white font-normal hover:text-gray-400"
-              onClick={() => handleOpen(1)}
-            >
-              What services do you offer?
-            </AccordionHeader>
-            <AccordionBody className="text-white font-normal hover:text-gray-400">
-              We offer custom app and web app development services tailored to
-              meet your specific needs.
-            </AccordionBody>
-          </Accordion>
           <Accordion open={open === 2} animate={customAnimation}>
             <AccordionHeader
               className="text-white font-normal hover:text-gray-400"
@@ -462,9 +489,9 @@ export default function Home() {
             </AccordionHeader>
             <AccordionBody className="text-white font-normal hover:text-gray-400">
               The cost of app development varies depending on factors such as
-              project complexity, features, platforms, and timelines. We provide
+              project complexity, features, platforms, and timelines. I provide
               personalized quotes after understanding your requirements in
-              detail. Feel free to reach out to us for a FREE consultation.
+              detail. Feel free to reach out for a FREE consultation.
             </AccordionBody>
           </Accordion>
           <Accordion open={open === 3} animate={customAnimation}>
@@ -477,7 +504,7 @@ export default function Home() {
             <AccordionBody className="text-white font-normal hover:text-gray-400">
               The development timeline depends on the scope and complexity of
               the project. Simple apps may take a few weeks, while more complex
-              projects can span several months. We work closely with our clients
+              projects can span several months. I work closely with my clients
               to establish realistic timelines and keep them informed throughout
               the development process.
             </AccordionBody>
@@ -490,8 +517,8 @@ export default function Home() {
               Can you help with both iOS and Android app development?
             </AccordionHeader>
             <AccordionBody className="text-white font-normal hover:text-gray-400">
-              Yes, we have expertise in developing apps for both iOS and Android
-              platforms. We can build native apps specific to each platform or
+              Yes, I have expertise in developing apps for both iOS and Android
+              platforms. I can build native apps specific to each platform or
               develop hybrid apps that work on multiple platforms, depending on
               your requirements.
             </AccordionBody>
@@ -505,8 +532,8 @@ export default function Home() {
               launched?
             </AccordionHeader>
             <AccordionBody className="text-white font-normal hover:text-gray-400">
-              Absolutely! We offer post-launch support and maintenance services
-              to ensure your app runs smoothly. We provide various support
+              Absolutely! I offer post-launch support and maintenance services
+              to ensure your app runs smoothly. I provide various support
               options, including bug fixes, updates, and feature enhancements,
               based on your needs.
             </AccordionBody>
@@ -519,10 +546,10 @@ export default function Home() {
               Can you integrate third-party services into the apps/web apps?
             </AccordionHeader>
             <AccordionBody className="text-white font-normal hover:text-gray-400">
-              Yes, we can integrate various third-party services, such as
-              payment gateways, social media platforms, analytics tools, and
-              more, based on your requirements. We ensure seamless integration
-              and functionality for a comprehensive app experience
+              Yes, I can integrate various third-party services, such as payment
+              gateways, social media platforms, analytics tools, and more, based
+              on your requirements. I ensure seamless integration and
+              functionality for a comprehensive app experience
             </AccordionBody>
           </Accordion>
           <Accordion open={open === 7} animate={customAnimation}>
@@ -533,27 +560,14 @@ export default function Home() {
               What is your development process?
             </AccordionHeader>
             <AccordionBody className="text-white font-normal hover:text-gray-400">
-              Our development process typically involves the following steps:
+              My development process typically involves the following steps:
               requirement gathering and analysis, UI/UX design, development,
-              testing, deployment, and ongoing support. We follow agile
+              testing, deployment, and ongoing support. I follow agile
               methodologies, allowing for flexibility and iterative improvements
               during the development cycle.
             </AccordionBody>
           </Accordion>
-          <Accordion open={open === 8} animate={customAnimation}>
-            <AccordionHeader
-              className="text-white font-normal hover:text-gray-400"
-              onClick={() => handleOpen(8)}
-            >
-              Can you provide references or examples of your previous work?
-            </AccordionHeader>
-            <AccordionBody className="text-white font-normal hover:text-gray-400">
-              Absolutely! We have a portfolio section on our website where you
-              can find examples of our previous projects. Additionally, we can
-              provide references upon request to give you a better understanding
-              of our clients satisfaction.
-            </AccordionBody>
-          </Accordion>
+
           <Accordion open={open === 9} animate={customAnimation}>
             <AccordionHeader
               className="text-white font-normal hover:text-gray-400"
@@ -562,10 +576,9 @@ export default function Home() {
               How do we get started with our app/web app development project?
             </AccordionHeader>
             <AccordionBody className="text-white font-normal hover:text-gray-400">
-              Getting started is simple! Reach out to us through our contact
-              page or by filling out the inquiry form. We&apos;ll get in touch
-              with you promptly to discuss your project requirements and guide
-              you through the next steps.
+              Getting started is simple! Reach out to me through my inquiry
+              form. I will get in touch with you promptly to discuss your
+              project requirements and guide you through the next steps.
             </AccordionBody>
           </Accordion>
         </section>
@@ -578,10 +591,10 @@ export default function Home() {
           >
             <h4 className="text-center">Still got something on your mind?</h4>
             <h2 className="flex flex-col text-center text-[30px]  font-bold  ">
-              Contact Us
+              Contact Me
             </h2>
             <p className="px-[10px] text-center opacity-70 mt-[1rem]">
-              We will get back to you ASAP! Just hit that Send button.
+              I will get back to you ASAP! Just hit that Send button.
             </p>
             <form
               ref={form}
