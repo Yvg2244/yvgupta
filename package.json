@@ -1,0 +1,28 @@
+{
+  "name": "services-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@material-tailwind/react": "^2.0.1",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.4",
+    "formik": "^2.4.1",
+    "framer-motion": "^10.12.16",
+    "next": "13.4.4",
+    "postcss": "8.4.24",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-remove-scroll-bar": "^2.3.4",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss": "3.3.2"
+  }
+}
