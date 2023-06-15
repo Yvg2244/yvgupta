@@ -2,6 +2,15 @@
 import { useState, useEffect } from "react";
 import React, { useRef } from "react";
 import axios from "axios";
+import {
+  AiFillLinkedin,
+  AiOutlineFileText,
+  AiFillGithub,
+} from "react-icons/ai";
+import { FaReact } from "react-icons/fa";
+import { SiJavascript, SiNextdotjs } from "react-icons/si";
+import { TbBrandJavascript } from "react-icons/tb";
+import {SiTailwindcss} from "react-icons/si"
 import { motion } from "framer-motion";
 import {
   Navbar,
@@ -82,7 +91,7 @@ export default function Home() {
         as="li"
         variant="small"
         color="white"
-        className="p-1 tracking-wider font-normal"
+        className="p-1 tracking-wider font-normal flex gap-2 items-center"
       >
         <a
           href="https://drive.google.com/file/d/1oG4tsKKfjVXq6UbutFFreegMOSM12iGT/view?usp=drive_link"
@@ -90,12 +99,13 @@ export default function Home() {
         >
           My Resume
         </a>
+        <AiOutlineFileText className="text-lg" />
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-1 tracking-wider font-normal flex gap-2 items-center"
       >
         <a
           href="https://github.com/Yvg2244"
@@ -103,12 +113,13 @@ export default function Home() {
         >
           Github
         </a>
+        <AiFillGithub className="text-lg" />
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-1 tracking-wider font-normal flex gap-2 items-center"
       >
         <a
           href="https://www.linkedin.com/in/yashverdhangupta/"
@@ -116,6 +127,7 @@ export default function Home() {
         >
           LinkedIn
         </a>
+        <AiFillLinkedin className="text-lg" />
       </Typography>
     </ul>
   );
@@ -186,7 +198,7 @@ export default function Home() {
               size="sm"
               fullWidth
             >
-              <Link href="#contact">Connect with us</Link>{" "}
+              <Link href="#contact">Connect with me</Link>{" "}
             </Button>
           </div>
         </Collapse>
@@ -236,7 +248,63 @@ export default function Home() {
             </motion.div>
           </h1>
           <div className="px-[10px] lg:text-[25px] w-auto z-[20] flex flex-col items-center ">
-            <Image src={dp} height={400} width={400}></Image>
+            <Image className="relative" src={dp} height={400} width={400}></Image>
+            {/* <motion.div
+            className="relative top-[1rem]"
+              initial={{ rotate: 0, x: 0, y: 0, zIndex: 10 }}
+              // animate={{
+              //   rotate: 0,
+              //   x: [100, 200, 100, 0, -100, -200, -100, 0],
+              //   y: [81.25, -20, 81.25, 162.5, 243.75, 325, 223.75, 142.5],
+              //   rotateZ:360,
+              //   zIndex: [10, -10],
+              // }}
+              // transition={{ duration: 3, repeat: Infinity, ease: "easeOut" }}
+              // style={{ position: "absolute" }}
+            >
+              <FaReact className="text-[3rem] text-[#39c7e4] border-white border-[1px] p-1 rounded-[50%]" />
+            </motion.div>
+            <motion.div
+              initial={{ rotate: 0, x: 0, y: 142.5, zIndex: 10 }}
+              // animate={{
+              //   rotate: 0,
+              //   x: [-100, -200, -100, 0, 100, 200, 100, 0],
+              //   y: [81.25, -20, 81.25, 162.5, 243.75, 325, 223.75, 142.5],
+              //   rotateZ:360,
+              //   zIndex: [10, -10],
+              // }}
+              // transition={{ duration: 3, repeat: Infinity, ease: "easeOut" }}
+              // style={{ position: "absolute" }}
+            >
+              <SiNextdotjs className="text-[3rem] text-[#white] border-white border-[1px] p-1 rounded-[50%]" />
+            </motion.div>
+            <motion.div
+              initial={{ rotate: 0, x: 0, y: 142.5, zIndex: 10 }}
+              // animate={{
+              //   rotate: 0,
+              //   x: [100, 200, 100, 0, -100, -200, -100, 0],
+              //   y: [142.5, 142.50,162.5, 162.5, 162.5, 142.5, 142.5, 142.5],
+              //   rotateZ:360,
+              //   zIndex: [10, -10],
+              // }}
+              // transition={{ duration: 3, repeat: Infinity, ease: "easeOut" }}
+              // style={{ position: "absolute" }}
+            >
+              <SiJavascript className="text-[3rem] text-[#fff41b] border-white border-[1px] p-1 rounded-[50%]" />
+            </motion.div>
+            <motion.div
+              initial={{ rotate: 0, y: 142.5, zIndex: 10 }}
+              // animate={{
+              //   rotate: 0,
+              //   y: [325,-50,142.5],
+              //   rotateZ:360,
+              //   zIndex: [],
+              // }}
+              // transition={{ duration: 3, repeat: Infinity, ease: "easeOut" }}
+              // style={{ position: "absolute" }}
+            >
+              <SiTailwindcss className="text-[3rem] text-[#5be1f2] border-white border-[1px] p-1 rounded-[50%]" />
+            </motion.div> */}
           </div>
           <Button
             sx={{ color: "white" }}
@@ -443,31 +511,31 @@ export default function Home() {
           <h2 className="flex flex-col  text-[30px]  font-bold  ">Services</h2>
 
           <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center p-[16px] font-bold gap-5 mt-6 mb-10">
-            <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
+            <div className="flex flex-col p-[16px] bg-[#110c14] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
                 <Image alt="FRONTEND" height={25} src={icon_frontend} />
               </div>
               <p>Full stack developement</p>
             </div>
-            <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
+            <div className="flex flex-col p-[16px] bg-[#110c14] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
                 <Image alt="SEO" height={25} src={icon_seo} />
               </div>
               <p>Search Engine Optimizations</p>
             </div>
-            <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
+            <div className="flex flex-col p-[16px] bg-[#110c14] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
                 <Image alt="UI" height={25} src={icon_ui} />
               </div>
               <p>UI/UX prototyping</p>
             </div>
-            <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
+            <div className="flex flex-col p-[16px] bg-[#110c14] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
                 <Image alt="UI" height={25} src={icon_ui} />
               </div>
               <p>Seamless User Interface</p>
             </div>
-            <div className="flex flex-col p-[16px] bg-[#0D0D0D] md:w-[17rem] rounded-md items-start gap-2">
+            <div className="flex flex-col p-[16px] bg-[#110c14] md:w-[17rem] rounded-md items-start gap-2">
               <div className="bg-gradient-to-r from-0% from-[#EE4578] to-100% to-[#FF6363] p-2 rounded-md">
                 <Image alt="CROSS PLATFORM" height={25} src={icon_cross} />
               </div>
@@ -475,112 +543,144 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="FAQ" className=" px-5">
-          <h2 className="flex flex-col text-center my-4 text-[25px]  font-bold  ">
+        <section
+          id="FAQ"
+          className="md:flex flex-col items-center justify-center  gap-[4rem] px-5"
+        >
+          <h2 className="flex md:w-[16rem] px-4 text-center my-4 text-[25px]  font-bold  ">
             Frequently Asked Questions
           </h2>
-
-          <Accordion open={open === 2} animate={customAnimation}>
-            <AccordionHeader
-              className="text-white font-normal hover:text-gray-400"
-              onClick={() => handleOpen(2)}
+          <div className="md:w-[65vw]">
+            <Accordion
+              className="py-6 px-8 border-none my-4 bg-[#110c14] rounded-lg"
+              open={open === 2}
+              animate={customAnimation}
             >
-              How much does it cost to develop an app/web app?
-            </AccordionHeader>
-            <AccordionBody className="text-white font-normal hover:text-gray-400">
-              The cost of app development varies depending on factors such as
-              project complexity, features, platforms, and timelines. I provide
-              personalized quotes after understanding your requirements in
-              detail. Feel free to reach out for a FREE consultation.
-            </AccordionBody>
-          </Accordion>
-          <Accordion open={open === 3} animate={customAnimation}>
-            <AccordionHeader
-              className="text-white font-normal hover:text-gray-400"
-              onClick={() => handleOpen(3)}
+              <AccordionHeader
+                className="border-none text-white font-normal hover:text-gray-300"
+                onClick={() => handleOpen(2)}
+              >
+                <p>How much does it cost to develop an app/web app?</p>
+              </AccordionHeader>
+              <AccordionBody className="text-white font-normal hover:text-gray-300">
+                The cost of app development varies depending on factors such as
+                project complexity, features, platforms, and timelines. I
+                provide personalized quotes after understanding your
+                requirements in detail. Feel free to reach out for a FREE
+                consultation.
+              </AccordionBody>
+            </Accordion>
+            <Accordion
+              className="py-6 px-8 border-none my-4 bg-[#110c14] rounded-lg"
+              open={open === 3}
+              animate={customAnimation}
             >
-              How long does it take to develop an app/web app?
-            </AccordionHeader>
-            <AccordionBody className="text-white font-normal hover:text-gray-400">
-              The development timeline depends on the scope and complexity of
-              the project. Simple apps may take a few weeks, while more complex
-              projects can span several months. I work closely with my clients
-              to establish realistic timelines and keep them informed throughout
-              the development process.
-            </AccordionBody>
-          </Accordion>
-          <Accordion open={open === 4} animate={customAnimation}>
-            <AccordionHeader
-              className="text-white font-normal hover:text-gray-400"
-              onClick={() => handleOpen(4)}
+              <AccordionHeader
+                className="border-none text-white font-normal hover:text-gray-300"
+                onClick={() => handleOpen(3)}
+              >
+                How long does it take to develop an app/web app?
+              </AccordionHeader>
+              <AccordionBody className="text-white font-normal hover:text-gray-300">
+                The development timeline depends on the scope and complexity of
+                the project. Simple apps may take a few weeks, while more
+                complex projects can span several months. I work closely with my
+                clients to establish realistic timelines and keep them informed
+                throughout the development process.
+              </AccordionBody>
+            </Accordion>
+            <Accordion
+              className="py-6 px-8 border-none my-4 bg-[#110c14] rounded-lg"
+              open={open === 4}
+              animate={customAnimation}
             >
-              Can you help with both iOS and Android app development?
-            </AccordionHeader>
-            <AccordionBody className="text-white font-normal hover:text-gray-400">
-              Yes, I have expertise in developing apps for both iOS and Android
-              platforms. I can build native apps specific to each platform or
-              develop hybrid apps that work on multiple platforms, depending on
-              your requirements.
-            </AccordionBody>
-          </Accordion>
-          <Accordion open={open === 5} animate={customAnimation}>
-            <AccordionHeader
-              className="text-white font-normal hover:text-gray-400"
-              onClick={() => handleOpen(5)}
+              <AccordionHeader
+                className="border-none text-white font-normal hover:text-gray-300"
+                onClick={() => handleOpen(4)}
+              >
+                Can you help with both iOS and Android app development?
+              </AccordionHeader>
+              <AccordionBody className="text-white font-normal hover:text-gray-300">
+                Yes, I have expertise in developing apps for both iOS and
+                Android platforms. I can build native apps specific to each
+                platform or develop hybrid apps that work on multiple platforms,
+                depending on your requirements.
+              </AccordionBody>
+            </Accordion>
+            <Accordion
+              className="py-6 px-8 border-none my-4 bg-[#110c14] rounded-lg"
+              open={open === 5}
+              animate={customAnimation}
             >
-              Do you provide ongoing support and maintenance after the app is
-              launched?
-            </AccordionHeader>
-            <AccordionBody className="text-white font-normal hover:text-gray-400">
-              Absolutely! I offer post-launch support and maintenance services
-              to ensure your app runs smoothly. I provide various support
-              options, including bug fixes, updates, and feature enhancements,
-              based on your needs.
-            </AccordionBody>
-          </Accordion>
-          <Accordion open={open === 6} animate={customAnimation}>
-            <AccordionHeader
-              className="text-white font-normal hover:text-gray-400"
-              onClick={() => handleOpen(6)}
+              <AccordionHeader
+                className="border-none text-white font-normal hover:text-gray-300"
+                onClick={() => handleOpen(5)}
+              >
+                Do you provide ongoing support and maintenance after the app is
+                launched?
+              </AccordionHeader>
+              <AccordionBody className="text-white font-normal hover:text-gray-300">
+                Absolutely! I offer post-launch support and maintenance services
+                to ensure your app runs smoothly. I provide various support
+                options, including bug fixes, updates, and feature enhancements,
+                based on your needs.
+              </AccordionBody>
+            </Accordion>
+            <Accordion
+              className="py-6 px-8 border-none my-4 bg-[#110c14] rounded-lg"
+              open={open === 6}
+              animate={customAnimation}
             >
-              Can you integrate third-party services into the apps/web apps?
-            </AccordionHeader>
-            <AccordionBody className="text-white font-normal hover:text-gray-400">
-              Yes, I can integrate various third-party services, such as payment
-              gateways, social media platforms, analytics tools, and more, based
-              on your requirements. I ensure seamless integration and
-              functionality for a comprehensive app experience
-            </AccordionBody>
-          </Accordion>
-          <Accordion open={open === 7} animate={customAnimation}>
-            <AccordionHeader
-              className="text-white font-normal hover:text-gray-400"
-              onClick={() => handleOpen(7)}
+              <AccordionHeader
+                className="border-none text-white font-normal hover:text-gray-300"
+                onClick={() => handleOpen(6)}
+              >
+                Can you integrate third-party services into the apps/web apps?
+              </AccordionHeader>
+              <AccordionBody className="text-white font-normal hover:text-gray-300">
+                Yes, I can integrate various third-party services, such as
+                payment gateways, social media platforms, analytics tools, and
+                more, based on your requirements. I ensure seamless integration
+                and functionality for a comprehensive app experience
+              </AccordionBody>
+            </Accordion>
+            <Accordion
+              className="py-4 px-8 border-none my-4 bg-[#110c14] rounded-lg"
+              open={open === 7}
+              animate={customAnimation}
             >
-              What is your development process?
-            </AccordionHeader>
-            <AccordionBody className="text-white font-normal hover:text-gray-400">
-              My development process typically involves the following steps:
-              requirement gathering and analysis, UI/UX design, development,
-              testing, deployment, and ongoing support. I follow agile
-              methodologies, allowing for flexibility and iterative improvements
-              during the development cycle.
-            </AccordionBody>
-          </Accordion>
-
-          <Accordion open={open === 9} animate={customAnimation}>
-            <AccordionHeader
-              className="text-white font-normal hover:text-gray-400"
-              onClick={() => handleOpen(9)}
+              <AccordionHeader
+                className="border-none text-white font-normal hover:text-gray-400"
+                onClick={() => handleOpen(7)}
+              >
+                What is your development process?
+              </AccordionHeader>
+              <AccordionBody className="text-white font-normal hover:text-gray-400">
+                My development process typically involves the following steps:
+                requirement gathering and analysis, UI/UX design, development,
+                testing, deployment, and ongoing support. I follow agile
+                methodologies, allowing for flexibility and iterative
+                improvements during the development cycle.
+              </AccordionBody>
+            </Accordion>
+            <Accordion
+              className="py-4 px-8 border-none my-4 bg-[#110c14] rounded-lg"
+              open={open === 9}
+              animate={customAnimation}
             >
-              How do we get started with our app/web app development project?
-            </AccordionHeader>
-            <AccordionBody className="text-white font-normal hover:text-gray-400">
-              Getting started is simple! Reach out to me through my inquiry
-              form. I will get in touch with you promptly to discuss your
-              project requirements and guide you through the next steps.
-            </AccordionBody>
-          </Accordion>
+              <AccordionHeader
+                className="border-none text-white font-normal hover:text-gray-400"
+                onClick={() => handleOpen(9)}
+              >
+                How do we get started with our app/web app development project?
+              </AccordionHeader>
+              <AccordionBody className="text-white font-normal hover:text-gray-400">
+                Getting started is simple! Reach out to me through my inquiry
+                form. I will get in touch with you promptly to discuss your
+                project requirements and guide you through the next steps.
+              </AccordionBody>
+            </Accordion>
+          </div>
         </section>
         <section id="contact" className="px-5">
           {" "}
